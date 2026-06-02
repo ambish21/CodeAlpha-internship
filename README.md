@@ -1,5 +1,13 @@
 🧮 Age Calculator Web App
 
+👨‍💻 Author
+Ambish Yaqoob
+Internship Project – Age Calculator
+
+📜 License
+
+This project is for educational and internship purposes.
+
 A modern, responsive Age Calculator built as part of an internship task. This project features a visually appealing UI with animations, glassmorphism design, and dynamic age group classification.
 
 🚀 Features
