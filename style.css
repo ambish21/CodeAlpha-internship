@@ -1,54 +1,87 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
 }
 
-.container {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b1020;
+    overflow:hidden;
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #38bdf8;
+/* Particle background full screen */
+#particles-js{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:0;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
+/* Main Card */
+.container{
+    position:relative;
+    z-index:1;
+
+    width:420px;
+    padding:30px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.6);
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    color: black;
-    transition: 0.3s;
+h1{
+    color:white;
+    margin-bottom:20px;
 }
 
-button:hover {
-    background: #0ea5e9;
+input{
+    width:100%;
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+    background:#1f2a44;
+    color:white;
 }
 
-#result {
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 8px;
+button{
+    width:100%;
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#6366f1;
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    border-radius:15px;
+    color:black;
+    font-weight:bold;
+    transition:0.5s;
 }
